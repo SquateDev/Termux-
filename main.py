@@ -3,6 +3,8 @@ import os
 from colorama import Fore, Style
 import subprocess 
 
+
+
 text = """██████╗░███████╗░█████╗░███╗░░██╗░█████╗░███╗░░██╗
 ██╔══██╗██╔════╝██╔══██╗████╗░██║██╔══██╗████╗░██║
 ██║░░██║█████╗░░███████║██╔██╗██║██║░░██║██╔██╗██║
@@ -32,13 +34,13 @@ user_input = input("Введите Число : ");
 if "1" in user_input.lower():
  os.system("clear");
  print(Fore.RED + text);
- print(Fore.GREEN+" Вы выбрали Поиск По номеру !");
- phone_num = input(Fore.YELLOW + "  Введите Номер +7 : ");
+ print(Fore.GREEN+"Вы выбрали Поиск По номеру !");
+ phone_num = input(Fore.YELLOW + "Введите Номер +7 : ");
  if phone_num.lower():
   print(Fore.RED+"Вы выбрали номер : +7"+phone_num);
   print(Fore.GREEN+"ФИО :");
   print(Fore.GREEN+"Номер : +7"+phone_num);
-  
+  print(Fore.GREEN+"Место : "+
 if "2" in user_input.lower():
   print(Fore.RED +"Вы выбрали поиск По ИП");
 
