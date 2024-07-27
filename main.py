@@ -10,6 +10,13 @@ text = """██████╗░███████╗░█████╗�
 ██████╔╝███████╗██║░░██║██║░╚███║╚█████╔╝██║░╚███║
 ╚═════╝░╚══════╝╚═╝░░╚═╝╚═╝░░╚══╝░╚════╝░╚═╝░░╚══╝"""
 time.sleep(1);
+os.system("clear");
+print("Loading... |");
+time.sleep(2);
+os.system("clear");
+print("Loading... /");
+time.sleep(2);
+os.system("clear");
 print("Loading... |");
 time.sleep(2);
 print("Loading... /");
@@ -17,15 +24,20 @@ time.sleep(2);
 os.system("clear");
 print(Fore.RED + text);
 print("\n\n\n");
-print(Fore.RED+"[ 1 ]"+Fore.WHITE+" Phone Searc");
-print(Fore.RED+"[ 2 ]"+Fore.WHITE+" IP Searc");
+print(Fore.RED+"[1]"+Fore.WHITE+" Phone Search");
+print(Fore.RED+"[2]"+Fore.WHITE+" IP Search");
+print(Fore.RED+"[3]"+Fore.WHITE+" Exit");
 user_input = input("Введите Число : ");
 if "1" in user_input.lower():
  os.system("clear");
  print(Fore.RED + text);
- print(Fore.RED+"Вы выбрали Поиск По номеру !");
- phone_num = input(Fore.RED + "Введите Номер +7 : ");
+ print(Fore.GREEN+" Вы выбрали Поиск По номеру !");
+ phone_num = input(Fore.YELLOW + "  Введите Номер +7 : ");
+ 
 if "2" in user_input.lower():
   print(Fore.RED +"Вы выбрали поиск По ИП");
 
+if "3" in user_input.lower():
+  print(Fore.RED +"Вы Вышли Из Системы!");
+  os.system("exit");
 
