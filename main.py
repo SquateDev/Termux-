@@ -35,7 +35,7 @@ if "1" in user_input.lower():
  print(Fore.GREEN+" Вы выбрали Поиск По номеру !");
  phone_num = input(Fore.YELLOW + "  Введите Номер +7 : ");
  if phone_num.lower():
-  print(Fore.RED+"Вы выбрали номер : +7"phone_num);
+  print(Fore.RED+"Вы выбрали номер : +7"+phone_num);
   print(Fore.GREEN+"ФИО :");
   print(Fore.GREEN+"Номер : +7"+phone_num);
   
